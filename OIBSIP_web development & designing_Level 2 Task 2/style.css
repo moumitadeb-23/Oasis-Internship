@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* QUOTE SECTION */
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+    color: black;
+    padding: 50px;
+}
+
+.quote {
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.quote-section img {
+    width: 300px;
+}
+
+/* BIOGRAPHY */
+.bio {
+    padding: 60px;
+    text-align: center;
+}
+
+.bio h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+}
