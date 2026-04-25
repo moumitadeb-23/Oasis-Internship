@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #f5e6c8, #f9d29d);
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.hero-img {
+    width: 70%;
+    margin-top: 30px;
+}
+
+/* FEATURES */
+.features {
+    padding: 60px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.feature img {
+    width: 250px;
+}
+
+.feature div {
+    max-width: 400px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* BENEFITS */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* STATS */
+.stats {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.map {
+    width: 80%;
+    margin: 20px 0;
+}
