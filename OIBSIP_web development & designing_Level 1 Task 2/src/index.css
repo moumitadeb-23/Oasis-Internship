@@ -1,0 +1,128 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 263 70% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 263 70% 50%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 263 70% 50%;
+
+    --radius: 0.5rem;
+
+    --electric-blue: 193 100% 50%;
+    --teal: 173 58% 39%;
+    --lavender: 263 70% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 7.1%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 7.1%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 0 0% 7.1%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 193 100% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 193 100% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 193 100% 50%;
+
+    --electric-blue: 193 100% 50%;
+    --teal: 173 58% 39%;
+    --lavender: 263 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Poppins',sans-serif];
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+  }
+
+  .dark .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(217.2 32.6% 12%) 100%);
+  }
+
+  .text-electric-blue {
+    color: hsl(var(--electric-blue));
+  }
+
+  .text-teal {
+    color: hsl(var(--teal));
+  }
+
+  .text-lavender {
+    color: hsl(var(--lavender));
+  }
+
+  .bg-electric-blue {
+    background-color: hsl(var(--electric-blue));
+  }
+
+  .bg-teal {
+    background-color: hsl(var(--teal));
+  }
+
+  .bg-lavender {
+    background-color: hsl(var(--lavender));
+  }
+}
